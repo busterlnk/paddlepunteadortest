@@ -24,10 +24,10 @@ const Contador = () => {
             const list = [];
             puntos.forEach((punto) => {
                 list.push(punto.val())
-                cambiarPuntoFinal(list)
             })
-        })
-    }, []);
+            cambiarPuntoFinal(list)
+            })
+        }, []);
     return (
         <div>
             {Array.isArray(puntoFinal) ? puntoFinal.map((partido, index) => {
